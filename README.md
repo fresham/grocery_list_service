@@ -1,24 +1,15 @@
-# README
+# Grocery List API Service
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Prerequisites
+* Ruby 2.3.6+
+* Bundler
 
-Things you may want to cover:
+## Initial Setup
+Install gem dependencies with `bundle install`, setup the database with `rake`,
+then finally run the RSpec tests to ensure everything is working.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+bundle install
+bundle exec rake db:setup
+bundle exec rspec
+```
