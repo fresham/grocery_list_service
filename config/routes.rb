@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # health check endpoints
+  get 'ping', to: 'health#ping'
+  get 'health', to: 'health#health'
+
   resources :grocery_items
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
