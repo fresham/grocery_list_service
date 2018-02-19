@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  # health check endpoints
-  get 'ping', to: 'health#ping'
-  get 'health', to: 'health#health'
+  get 'ping' => 'health#ping'
+  get 'health' => 'health#health'
+
+  post 'login' => 'user_token#create'
 
   resources :grocery_items
 end
